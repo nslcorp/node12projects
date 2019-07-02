@@ -1,0 +1,27 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    link(href='/stylesheets/bootstrap.min.css', rel='stylesheet')
+  body
+    nav.navbar.navbar-expand-sm.navbar-light.bg-light
+      .container
+        a.navbar-brand(href='#') SimpleAuth
+        #navbarSupportedContent.collapse.navbar-collapse
+          ul.navbar-nav.mr-auto
+            li.nav-item
+              a.nav-link(href='/users/register') Register
+            li.nav-item
+              a.nav-link(href='/users/login') Login
+            li.nav-item
+              a.nav-link(href='/') Members
+          ul.navbar-nav
+            li.nav-item
+              a.nav-link(href='/users/logout') Logout
+    main.container(role='main')
+      .starter-templatete
+        block content
+
+    // /.container
+    script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js', integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo', crossorigin='anonymous')
